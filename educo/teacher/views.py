@@ -8,3 +8,7 @@ class TeacherView(TemplateView):
 
 class MaterialMarketView(TemplateView):
     template_name = 'teacher/tutemarket.html'
+
+
+class TeacherDashView(TemplateView):
+    template_name = 'teacher/dash.html'
