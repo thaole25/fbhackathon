@@ -1,4 +1,4 @@
-# from django.shortcuts import render
+from django.shortcuts import render, redirect
 from django.http import HttpResponse
 from django.views.generic import TemplateView
 
@@ -8,5 +8,5 @@ class HomePageView(TemplateView):
 class JoinPageView(TemplateView):
     template_name = 'schools/join.html'
 
-class JoinSucceedPageView(TemplateView):
-    template_name = 'schools/succeed.html'
+class JoinSubmitPage(TemplateView):
+    template_name = 'schools/submit.html'
