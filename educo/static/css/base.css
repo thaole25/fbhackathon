@@ -4,3 +4,26 @@ footer {
     width: 100%;
     height: 2.5rem;            /* Footer height */
 }
+
+/* For scrollable background */
+.parallax {
+  /* The image used */
+  background-image: url('img_parallax.jpg');
+
+  /* Full height */
+  height: 100%; 
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.wrapper{
+    width: 100%; 
+    height: 500px;
+
+    overflow-x:scroll;     
+    white-space: nowrap;
+}
