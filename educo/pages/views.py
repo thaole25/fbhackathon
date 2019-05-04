@@ -1,5 +1,5 @@
 from django.views.generic import TemplateView
-from django.shortcuts import render
+from django.shortcuts import render, redirect
 from schools.models import School
 
 # class HomePageView(TemplateView):
@@ -9,8 +9,9 @@ def HomePageView(request):
     schools = School.objects.all()
     return render(request, 'pages/home.html', {'schools':schools})
 
-
 class DashboardPageView(TemplateView):
     template_name = 'pages/dashboard.html'
+
+#def loginRedirect(request):
 
 
