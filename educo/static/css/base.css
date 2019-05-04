@@ -26,3 +26,19 @@ footer {
   height:500px;
   overflow-y: scroll;
 }
+
+
+.crop {
+    width: 800px;
+    height: 300px;
+    overflow: hidden;
+    object-fit: cover;
+}
+
+.crop img {
+    width: 800px;
+    height: 300px;
+    margin: -75px 0 0 -100px;
+    object-fit: cover;
+}
+
