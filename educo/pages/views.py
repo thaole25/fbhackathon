@@ -12,6 +12,9 @@ def HomePageView(request):
 class DashboardPageView(TemplateView):
     template_name = 'pages/dashboard.html'
 
-#def loginRedirect(request):
-
+def loginRedirect(request):
+    if request.user.groups.filter(name="teachers").exists():
+        return redirect("teachers/dash")
+    else:
+        return redirect("student/dash")
 
