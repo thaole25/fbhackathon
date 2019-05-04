@@ -5,26 +5,144 @@
 
 {% block content %}
 
-<ul class="list-">
-  <li class="media">
-    <img class="mr-3" src="{% static "images/books.jpg" %}" alt="Generic placeholder image">
-    <div class="media-body">
-      <h5 class="mt-0 mb-1">List-based media object</h5>
-      Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
+<h1>Week5-Tutorial/Answer</h1>
+<small class="text-muted">COMP10001-Foundation of Computing</small>
+<br/><br/>
+<div class="btn-group" role="group" aria-label="Button group with nested dropdown">
+    <div class="btn-group" role="group">
+        <button id="btnGroupDrop1" type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        Type
+        </button>
+        <div class="dropdown-menu" aria-labelledby="btnGroupDrop1">
+            <a class="dropdown-item" href="#">Presentation</a>
+            <a class="dropdown-item" href="#">Script</a>
+            <a class="dropdown-item" href="#">Note</a>
+        </div>
     </div>
-  </li>
+    <div class="btn-group" role="group">
+        <button id="btnGroupDrop2" type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        Format
+        </button>
+        <div class="dropdown-menu" aria-labelledby="btnGroupDrop2">
+            <a class="dropdown-item" href="#">Keynote</a>
+            <a class="dropdown-item" href="#">PPT</a>
+            <a class="dropdown-item" href="#">PDF</a>
+            <a class="dropdown-item" href="#">Bundle</a>
+        </div>
+    </div>
+    <div class="btn-group" role="group">
+        <button id="btnGroupDrop3" type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        Style
+        </button>
+        <div class="dropdown-menu" aria-labelledby="btnGroupDrop3">
+            <a class="dropdown-item" href="#">Group Work Oriented</a>
+            <a class="dropdown-item" href="#">Discussion Based</a>
+            <a class="dropdown-item" href="#">Theory Emphasis</a>
+        </div>
+    </div>
+    <div class="btn-group" role="group">
+        <button id="btnGroupDrop3" type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        Length
+        </button>
+        <div class="dropdown-menu" aria-labelledby="btnGroupDrop3">
+            <a class="dropdown-item" href="#">Long</a>
+            <a class="dropdown-item" href="#">Medium</a>
+            <a class="dropdown-item" href="#">Short</a>
+        </div>
+    </div>
+</div>
+
+<br/><br/>
+
+<hr class="my-4">
+<ul class="list">
   <li class="media my-4">
-    <img class="mr-3" src="..." alt="Generic placeholder image">
+    <img class="mr-3" src="{% static "subjects/sampleslide1.png" %}" alt="Slide" height=128px>
     <div class="media-body">
-      <h5 class="mt-0 mb-1">List-based media object</h5>
-      Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
+        <a href="#">
+            <h5 class="mt-0 mb-1">Worksheet based slide</h5>
+        </a>
+      <ul>
+          <li>
+            This keynote presentation is created by refactoring the original tutorial content into logical chunks to provide student with a better understanding of the overall structure.
+          </li>
+          <li>
+            Sample Code fragments are written to accommodate students with weak programming base.
+          </li>
+          <li>
+      Some amount of <b>advanced contents</b> including the built-in <b>pdb</b> debugger are also covered in this slide!
+          </li>
+      </ul>
     </div>
   </li>
-  <li class="media">
-    <img class="mr-3" src="..." alt="Generic placeholder image">
+  <hr class="my-4">
+  <li class="media my-4">
+    <img class="mr-3" src="{% static "subjects/sampleboard1.jpg" %}" alt="Slide" height=128px>
     <div class="media-body">
-      <h5 class="mt-0 mb-1">List-based media object</h5>
-      Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
+
+    <a href="#">
+      <h5 class="mt-0 mb-1">Board Presentation Style Guide</h5>
+
+    </a>
+      <ul>
+      <ul>
+          <li>
+              This is a showcase presentation of this content. We use precisely designed teaching structure to make the teaching as fluent as possible and strive to cover all contents provided.
+          </li>
+          <li>
+              Detailed timestamp are also shown in the example to give a guideline of when part of the content dhould be done
+          </li>
+          <li>
+              We cover no advanced materials but provide an indepth understanding of the current material. Best suited to tutor who are able to engage student better.
+          </li>
+      </ul>
+    </div>
+  </li>
+  <hr class="my-4">
+  <li class="media my-4">
+    <img class="mr-3" src="{% static "subjects/sampleslide2.png" %}" alt="Slide" height=128px>
+    <div class="media-body">
+
+    <a href="#">
+      <h5 class="mt-0 mb-1">Styled Slide</h5>
+
+    </a>
+      <ul>
+      <ul>
+          <li>
+              Created by an experienced tutor
+          </li>
+          <li>
+              All materials are accompanied by great custom samples
+          </li>
+          <li>
+              More contents covered than most other materials
+          </li>
+          <li>
+              Suitable only for experienced tutors
+          </li>
+      </ul>
+    </div>
+  </li>
+  <hr class="my-4">
+  <li class="media my-4">
+    <img class="mr-3" src="{% static "subjects/samplecode1.png" %}" alt="Slide" height=128px>
+    <div class="media-body">
+    <a href="#">
+      <h5 class="mt-0 mb-1">Worksheet based slide</h5>
+    </a>
+      <ul>
+      <ul>
+          <li>
+            This keynote presentation is created by refactoring the original tutorial content into logical chunks to provide student with a better understanding of the overall structure.
+          </li>
+          <li>
+            Sample Code fragments are written to accommodate students with weak programming base.
+          </li>
+          <li>
+      Some amount of <b>advanced contents</b> including the built-in <b>pdb</b> debugger are also covered in this slide!
+          </li>
+      </ul>
     </div>
   </li>
 </ul>
