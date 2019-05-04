@@ -22,3 +22,12 @@ li a {
 li a:hover {
     background-color: #111;
 }
+
+.jumbotron1 {
+    background: url(https://www.franchiseindia.com//uploads/content/edu/art/5a12b8475adc9.jpg) no-repeat center center;
+    background-size: cover;
+    text-align: center;
+    height: 200px;
+    padding-bottom: 50px;
+    overflow: hidden;
+}
