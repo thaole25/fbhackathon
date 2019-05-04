@@ -1,0 +1,46 @@
+{% extends '_base.html' %}
+{% load static %}
+
+{% block title %}Home page{% endblock title %}
+
+{% block content %}
+<h1>Schools</h1>
+
+<div class="jumbotron">
+    <h2 class="display-4">Join Educo</h1>
+        <p class="lead">For Universities which want to ..........................</p>
+        <hr class="my-4">
+        <div class="input-group mb-4">
+            <div class="input-group-prepend">
+                <span class="input-group-text" id="inputGroup-sizing-default">University Name</span>
+            </div>
+            <input type="text" class="form-control" aria-label="Sizing example input"
+                aria-describedby="inputGroup-sizing-default">
+        </div>
+        <div class="input-group mb-4">
+            <div class="input-group-prepend">
+                <span class="input-group-text" id="inputGroup-sizing-default">Contact Email</span>
+            </div>
+            <input type="text" class="form-control" aria-label="Sizing example input"
+                aria-describedby="inputGroup-sizing-default">
+        </div>
+        <div class="input-group mb-4">
+            <div class="input-group-prepend">
+                <span class="input-group-text" id="inputGroup-sizing-default">Phone Number</span>
+            </div>
+            <input type="text" class="form-control" aria-label="Sizing example input"
+                aria-describedby="inputGroup-sizing-default">
+        </div>
+        <div class="input-group mb-4">
+                <div class="input-group-prepend">
+                    <span class="input-group-text" id="inputGroup-sizing-default">Address</span>
+                </div>
+                <input type="text" class="form-control" aria-label="Sizing example input"
+                    aria-describedby="inputGroup-sizing-default">
+            </div>
+        <a class="btn btn-light btn-lg" href="#" role="button">Submit</a>
+</div>
+
+<br><br>
+
+{% endblock content %}
