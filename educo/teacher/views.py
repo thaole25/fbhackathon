@@ -6,3 +6,5 @@ class TeacherView(TemplateView):
     template_name = 'teacher/teacher.html'
 
 
+class MaterialMarketView(TemplateView):
+    template_name = 'teacher/tutemarket.html'
