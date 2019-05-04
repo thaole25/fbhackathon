@@ -11,10 +11,12 @@ class MaterialMarketView(TemplateView):
 class MaterialContentView(TemplateView):
     template_name = 'teacher/materialcontent.html'
 
-
+class FilteredMaterialContentView(TemplateView):
+    template_name = 'teacher/tutemarket1.html'
 
 class TeacherDashView(TemplateView):
     template_name = 'teacher/dash.html'
 
 class TeacherAnalysisManageView(TemplateView):
     template_name = 'teacher/analysis_manage.html'
+
