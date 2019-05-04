@@ -2,14 +2,6 @@
 {% load static %}
 
 {% block title %}Home page{% endblock title %}
-<head>
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<style>
-.checked {
-  color: orange;
-}
-</style>
-</head>
 
 {% block content %}
 <div class="jumbotron jumbotron-fluid">
@@ -41,9 +33,18 @@
 </div>
 
 </div>
-<h4>Title: COMP10001 Tutorial Week 6 Worksheet Based Slides</h3>
+<h4>Title: COMP10001 Tutorial Week 6 Worksheet Based Slides</h4>
 <p>Author: Thor Odinson<br>
-Update Time: 03, May, 2019</p>
+Update Time: 03, May, 2019<br>
+Rating:
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star"></span>
+</p>
+
+
 
 
 <div class="btn-group">
@@ -51,9 +52,9 @@ Update Time: 03, May, 2019</p>
     Year
   </button>
   <div class="dropdown-menu">
-    <a class="dropdown-item" href="#">2019</a>
-    <a class="dropdown-item" href="#">2018</a>
-    <a class="dropdown-item" href="#">2017</a>
+    <a class="dropdown-item" href="">2019</a>
+    <a class="dropdown-item" href="">2018</a>
+    <a class="dropdown-item" href="">2017</a>
   </div>
   </div>
   <div>
@@ -61,19 +62,11 @@ Update Time: 03, May, 2019</p>
     Version
   </button>
   <div class="dropdown-menu">
-    <a class="dropdown-item" href="#">1</a>
-    <a class="dropdown-item" href="#">2</a>
-    <a class="dropdown-item" href="#">3</a>
+    <a class="dropdown-item" href="">1</a>
+    <a class="dropdown-item" href="">2</a>
+    <a class="dropdown-item" href="">3</a>
   </div>
 </div>
-
-
-<span class="fa fa-star checked"></span>
-<span class="fa fa-star checked"></span>
-<span class="fa fa-star checked"></span>
-<span class="fa fa-star"></span>
-<span class="fa fa-star"></span>
-
 
 
 {% endblock content %}
