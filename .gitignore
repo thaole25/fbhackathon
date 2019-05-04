@@ -9,3 +9,5 @@ educo/.idea
 *.iml
 
 scratch/
+
+**/db.sqlite3
