@@ -12,3 +12,6 @@ class MaterialContentView(TemplateView):
     template_name = 'teacher/materialcontent.html'
 
 
+
+class TeacherDashView(TemplateView):
+    template_name = 'teacher/dash.html'
