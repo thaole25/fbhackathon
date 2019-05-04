@@ -10,7 +10,7 @@ def HomePageView(request):
     return render(request, 'pages/home.html', {'schools':schools})
 
 
-class AboutPageView(TemplateView):
-    template_name = 'pages/about.html'
+class DashboardPageView(TemplateView):
+    template_name = 'pages/dashboard.html'
 
 
