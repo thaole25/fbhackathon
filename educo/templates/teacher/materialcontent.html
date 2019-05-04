@@ -2,44 +2,24 @@
 {% load static %}
 
 {% block title %}Home page{% endblock title %}
-<head>
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<style>
-.checked {
-  color: orange;
-}
-</style>
-</head>
 
 {% block content %}
 <div class="jumbotron jumbotron-fluid">
-<h2 align="center">COMP90024 Lecture 7</h2>
+<h2 align="center">Worksheet Based Slides</h2>
 
 <div id="carouselExampleInterval" class="carousel slide" data-ride="carousel">
   <div class="carousel-inner">
     <div class="carousel-item active" data-interval="10000" align="center">
-        <img src="{% static "images/slides/s0.png" %}" width="800pt" height="450pt"  height="450pt" alt="s">
+      <img src="{% static "images/s/x0.png" %}" width="800pt" height="600pt"  alt="s">
     </div>
     <div class="carousel-item" data-interval="10000" align="center">
-      <img src="{% static "images/slides/s1.png" %}" width="800pt" height="450pt"  alt="s">
+      <img src="{% static "images/s/x1.png" %}" width="800pt" height="600pt"  alt="s">
     </div>
     <div class="carousel-item" data-interval="10000" align="center">
-      <img src="{% static "images/slides/s2.png" %}" width="800pt" height="450pt"  alt="s">
+      <img src="{% static "images/s/x2.png" %}" width="800pt" height="600pt"  alt="s">
     </div>
     <div class="carousel-item" data-interval="10000" align="center">
-      <img src="{% static "images/slides/s3.png" %}" width="800pt" height="450pt"  alt="s">
-    </div>
-    <div class="carousel-item" data-interval="10000" align="center">
-      <img src="{% static "images/slides/s4.png" %}" width="800pt" height="450pt"  alt="s">
-    </div>
-    <div class="carousel-item" data-interval="10000" align="center">
-      <img src="{% static "images/slides/s5.png" %}" width="800pt" height="450pt"  alt="s">
-    </div>
-    <div class="carousel-item" data-interval="10000" align="center">
-      <img src="{% static "images/slides/s6.png" %}" width="800pt" height="450pt"  alt="s">
-    </div>
-    <div class="carousel-item" data-interval="10000" align="center">
-      <img src="{% static "images/slides/s7.png" %}" width="800pt" height="450pt"  alt="s">
+      <img src="{% static "images/s/x3.png" %}" width="800pt" height="600pt"  alt="s">
     </div>
   </div>
   <a class="carousel-control-prev" href="#carouselExampleInterval" role="button" data-slide="prev">
@@ -53,9 +33,18 @@
 </div>
 
 </div>
-<h4>Title: COMP90024 Cluster and Cloud Computing Lecture 7 Slides</h3>
+<h4>Title: COMP10001 Tutorial Week 6 Worksheet Based Slides</h4>
 <p>Author: Thor Odinson<br>
-Update Time: 03, May, 2019</p>
+Update Time: 03, May, 2019<br>
+Rating:
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star"></span>
+</p>
+
+
 
 
 <div class="btn-group">
@@ -63,9 +52,9 @@ Update Time: 03, May, 2019</p>
     Year
   </button>
   <div class="dropdown-menu">
-    <a class="dropdown-item" href="#">2019</a>
-    <a class="dropdown-item" href="#">2018</a>
-    <a class="dropdown-item" href="#">2017</a>
+    <a class="dropdown-item" href="">2019</a>
+    <a class="dropdown-item" href="">2018</a>
+    <a class="dropdown-item" href="">2017</a>
   </div>
   </div>
   <div>
@@ -73,19 +62,11 @@ Update Time: 03, May, 2019</p>
     Version
   </button>
   <div class="dropdown-menu">
-    <a class="dropdown-item" href="#">1</a>
-    <a class="dropdown-item" href="#">2</a>
-    <a class="dropdown-item" href="#">3</a>
+    <a class="dropdown-item" href="">1</a>
+    <a class="dropdown-item" href="">2</a>
+    <a class="dropdown-item" href="">3</a>
   </div>
 </div>
-
-
-<span class="fa fa-star checked"></span>
-<span class="fa fa-star checked"></span>
-<span class="fa fa-star checked"></span>
-<span class="fa fa-star"></span>
-<span class="fa fa-star"></span>
-
 
 
 {% endblock content %}
