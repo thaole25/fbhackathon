@@ -4,7 +4,46 @@
 {% block title %}Home page{% endblock title %}
 
 {% block content %}
-<h1>Home page</h1>
-<img src="{% static 'images/falconx.png' %}" class="img-fluid" alt="FalconX launch"/>
-{% endblock content %}
 
+<body>
+    <h1 align="center">Welcome to Educo</h1>
+    <div>
+        <h2 align="center">Our organisations</h2>
+        <div class="row">
+            <div class="col-sm-3">
+                <div class="card">
+                    <div class="card-body" style="background-color: #0a4083">
+                        <a href="https://www.unimelb.edu.au/"><img
+                                src="https://d2glwx35mhbfwf.cloudfront.net/v3.1.5/logo.svg" class="card-img-top"
+                                alt="The University of Melbourne"></a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-3">
+                <div class="card">
+                    <div class="card-body">
+                        <a href="https://www.monash.edu/"><img
+                                src="https://www.monash.edu/__data/assets/git_bridge/0006/509343/deploy/mysource_files/monash-logo-mono.svg"
+                                class="card-img-top" alt="Monash University"></a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-3">
+                <div class="card">
+                    <div class="card-body">
+                        <a href="https://www.rmit.edu.au/"><img
+                                src="https://www.rmit.edu.au/content/dam/rmit-ui/logo/rmit-logo@2x.png"
+                                class="card-img-top" alt="RMIT"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <p>
+        <h4>Want to join? Click<a style="font-size: 20pt" href="/schools/join/" class="badge badge-light">HERE</a></h4>
+    </p>
+
+
+</body>
+{% endblock content %}
