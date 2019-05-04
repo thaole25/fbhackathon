@@ -2,27 +2,40 @@
 
 {% block title %}About page{% endblock %}
 
-{% block content %}
-<h1>About page</h1>
+{% load static %}
 
-    <div class="jumbotron text-center">
-  <h1>About Us</h1>
-  <p>Educo</p>
+{% block content %}
+
+
+    <div class="jumbotron1 text-center">
+
 </div>
 
 <div class="container">
   <div class="row">
     <div class="col-sm-4">
-      <h3>Column 1</h3>
-      <p>Lorem ipsum dolor..</p>
+        <div class="col-sm-12">
+            <img src="{% static "images/books.jpg" %}" width="150" height="150">
+
+        </div>
+      <h3>Library</h3>
+      <p>A personal library created for you to access from anywhere</p>
+
     </div>
     <div class="col-sm-4">
-      <h3>Column 2</h3>
-      <p>Lorem ipsum dolor..</p>
+        <div class="col-sm-12">
+            <img src="{% static "images/microscope.jpg" %}" width="150" height="150">
+        </div>
+        <h3>Analysis</h3>
+        <p>Embedded student homework analysis</p>
+
     </div>
     <div class="col-sm-4">
-      <h3>Column 3</h3>
-      <p>Lorem ipsum dolor..</p>
+        <div class="col-sm-12">
+            <img src="{% static "images/science.jpg" %}" width="150" height="150">
+        </div>
+        <h3>Easy Version Control</h3>
+        <p>Build for more efficient subject coordination</p>
     </div>
   </div>
 </div>
