@@ -24,15 +24,6 @@ li a:hover {
     background-color: #111;
 }
 
-.jumbotron1 {
-    background: url(https://www.franchiseindia.com//uploads/content/edu/art/5a12b8475adc9.jpg) no-repeat center center;
-    background-size: cover;
-    text-align: center;
-    height: 200px;
-    padding-bottom: 50px;
-    overflow: hidden;
-}
-
 footer {
     position: absolute;
     bottom: 0;
@@ -40,20 +31,6 @@ footer {
     height: 2.5rem;            /* Footer height */
 }
 
-/* For scrollable background */
-.parallax {
-  /* The image used */
-  background-image: url('img_parallax.jpg');
-
-  /* Full height */
-  height: 100%; 
-
-  /* Create the parallax scrolling effect */
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
 
 .wrapper{
     width: 100%; 
@@ -61,4 +38,12 @@ footer {
 
     overflow-x:scroll;     
     white-space: nowrap;
+}
+
+.vertical-center {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
 }
