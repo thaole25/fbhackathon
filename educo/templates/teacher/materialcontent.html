@@ -2,8 +2,14 @@
 {% load static %}
 
 {% block title %}Home page{% endblock title %}
-
+<head>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+.checked {
+  color: orange;
+}
+</style>
+</head>
 
 {% block content %}
 <div class="jumbotron jumbotron-fluid">
@@ -49,18 +55,37 @@
 </div>
 <h4>Title: COMP90024 Cluster and Cloud Computing Lecture 7 Slides</h3>
 <p>Author: Thor Odinson<br>
-Update Time: 03, May, 2019<br>
-Year: 2019</p>
+Update Time: 03, May, 2019</p>
 
-<div>Version: 1</div>
 
-<div>
-<span class="fa fa-star checked"></span>
-<span class="fa fa-star checked"></span>
-<span class="fa fa-star checked"></span>
-<span class="fa fa-star"></span>
-<span class="fa fa-star"></span>
+<div class="btn-group">
+  <button type="button" class="btn btn-light dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    Year
+  </button>
+  <div class="dropdown-menu">
+    <a class="dropdown-item" href="#">2019</a>
+    <a class="dropdown-item" href="#">2018</a>
+    <a class="dropdown-item" href="#">2017</a>
+  </div>
+  </div>
+  <div>
+  <button type="button" class="btn btn-light dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    Version
+  </button>
+  <div class="dropdown-menu">
+    <a class="dropdown-item" href="#">1</a>
+    <a class="dropdown-item" href="#">2</a>
+    <a class="dropdown-item" href="#">3</a>
+  </div>
 </div>
+
+
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star"></span>
+<span class="fa fa-star"></span>
+
 
 
 {% endblock content %}
