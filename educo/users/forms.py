@@ -4,6 +4,8 @@ from .models import CustomUser
 
 class CustomUserCreationForm(UserCreationForm):
 
+    # TODO add first name / last name / subject
+
     class Meta(UserCreationForm.Meta):
         model = CustomUser
         fields = ('email', 'username',)
