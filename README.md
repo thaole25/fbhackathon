@@ -6,6 +6,11 @@
 - pip install django-crispy-forms
 - pip install django-debug-toolbar
 
-## How to run the server
+## Set up new user
+- python manage.py makemigrations users
+- python manage.py migrate
+- python manage.py createsuperuser
+  - user:admin
+  - password:admin
 - python manage.py runserver
-- go to: http://127.0.0.1:8000/home
+- go to: http://127.0.0.1:8000.
