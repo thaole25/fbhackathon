@@ -21,3 +21,8 @@ footer {
     -ms-transform: translateY(-50%);
     transform: translateY(-50%);
 }
+
+.vertical-scroll {
+  height:500px;
+  overflow-y: scroll;
+}
