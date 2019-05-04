@@ -1,8 +1,13 @@
 from django.views.generic import TemplateView
+from django.shortcuts import render
+from schools.models import School
 
+# class HomePageView(TemplateView):
+#     template_name = 'pages/home.html'
 
-class HomePageView(TemplateView):
-    template_name = 'pages/home.html'
+def HomePageView(request):
+    schools = School.objects.all()
+    return render(request, 'pages/home.html', {'schools':schools})
 
 
 class AboutPageView(TemplateView):
