@@ -3,6 +3,34 @@
 
 {% block title %}Home page{% endblock title %}
 
+<style>
+div.gallery {
+  margin: 5px;
+  border: 1px solid #ccc;
+  float: bottom;
+  width: 180px;
+}
+
+div.gallery:hover {
+  border: 1px solid #777;
+}
+
+div.gallery img {
+    border:0;  
+    margin:0;  
+    padding:0; 
+    max-width:200px; 
+    width:expression(this.width>200?"200px":this.width); 
+    max-height:200px; 
+    height:expression(this.height>200?"200px":this.height);
+}
+
+div.desc {
+  padding: 15px;
+  text-align: center;
+}
+</style>
+
 {% block content %}
 
 <body>
@@ -12,15 +40,18 @@
         <div class="row">
 
             {% for school in schools %}
-            <div class="col-sm-3">
-                <div class="card">
+        <div class="gallery">
+            <a target="_blank" href="img_5terre.jpg">
                     <div class="card-body" {% if school.name == 'The University of Melbourne' %}style="background-color: #0a4083"{% endif %}>
                             <a href={{school.web_link}}><img src={{school.img_link}} class="card-img-top"
-                                    alt={{school.name}} width="400" height="200"></a>
+                                    alt={{school.name}} width="200" height="200"></a>
                     </div>
-                </div>
-            </div>
+            </a>
+        <div class="desc" align="center">{{school.name}}</div>
+        </div>
             {% endfor %}
+            
+            </div>
             <br>
         <div align="center">
             <h4>Want to join? Click<a style="font-size: 20pt" href="/schools/join/" class="badge badge-light">HERE</a>
