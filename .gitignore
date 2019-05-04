@@ -3,3 +3,6 @@ educo/.idea
 
 
 **/__pycache__
+.idea/workspace.xml
+*.xml
+*.iml
