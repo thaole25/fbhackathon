@@ -12,3 +12,6 @@ class MaterialMarketView(TemplateView):
 
 class TeacherDashView(TemplateView):
     template_name = 'teacher/dash.html'
+
+class TeacherAnalysisManageView(TemplateView):
+    template_name = 'teacher/analysis_manage.html'
