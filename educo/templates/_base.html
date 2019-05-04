@@ -6,7 +6,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
 <title>{% block title %}Educo{% endblock title %}</title>
-<meta name="description" content="A framework for launching new Django projects quickly.">
+<meta name="description" content="Collects intellect from all educators from past to future">
 <meta name="author" content="">
 <link rel="shortcut icon" type="image/x-icon" href="{% static 'images/favicon.ico' %}">
 
@@ -22,6 +22,7 @@
 <body>
   <nav class="navbar navbar-expand-md navbar-dark bg-dark mb-4">
       <a class="navbar-brand" href="{% url 'home' %}">Educo</a>
+      <a class="navbar-brand" href="{% url 'about' %}">About us</a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -54,8 +55,6 @@
     {% endblock content %}
   </div>
 
-     <p style="text-align: center">&copy; Educo 2019</p>
-
   {% block javascript %}
   <!-- Bootstrap JavaScript -->
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
@@ -70,4 +69,7 @@
   {% endblock javascript %}
 
 </body>
+<footer>
+    <p style="text-align: center">&copy; Educo 2019</p>
+</footer>
 </html>
